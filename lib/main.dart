@@ -111,8 +111,8 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void openWhatsApp() async {
-    final String phone = "491759580976"; // deine WhatsApp-Nummer
-    final String whatsappMessage = "Hallo Sascha, ich habe die App getestet!";
+    final String phone = "491711111111";
+    final String whatsappMessage = "Hallo du, ich habe die App getestet!";
     final url = Uri.parse(
         "https://wa.me/$phone?text=${Uri.encodeComponent(whatsappMessage)}");
 
@@ -124,10 +124,9 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void sendEmail() async {
-    final String email = "sascha.poenicke@googlemail.com";
+    final String email = "test@test.com";
     final String emailSubject = "Test Recycling-App";
-    final String emailBody =
-        "Hallo Sascha,\n\nder Test der App ist abgeschlossen.";
+    final String emailBody = "Hallo du,\n\nder Test der App ist abgeschlossen.";
 
     final Uri emailUri = Uri(
       scheme: 'mailto',
@@ -471,7 +470,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     Column(
                                       children: [
                                         const Text(
-                                            "Der Testzeitraum ist abgelaufen. \n Vielen Dank für deine Teilnahme! Bitte wende dich an Sascha, um Zugang zum Fragebogen zu erhalten.",
+                                            "Der Testzeitraum ist abgelaufen. \n Vielen Dank für deine Teilnahme! Bitte wende dich an den Entwickler, um Zugang zum Fragebogen zu erhalten.",
                                             style: TextStyle(fontSize: 18),
                                             textAlign: TextAlign.center),
                                         const SizedBox(height: 15),
@@ -555,7 +554,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     Column(
                                       children: [
                                         const Text(
-                                            "Der Testzeitraum ist abgelaufen. \n Vielen Dank für deine Teilnahme! Bitte wende dich an Sascha, um Zugang zum Fragebogen zu erhalten.",
+                                            "Der Testzeitraum ist abgelaufen. \n Vielen Dank für deine Teilnahme! Bitte wende dich an den Entwickler, um Zugang zum Fragebogen zu erhalten.",
                                             style: TextStyle(fontSize: 15),
                                             textAlign: TextAlign.center),
                                         const SizedBox(height: 12),
