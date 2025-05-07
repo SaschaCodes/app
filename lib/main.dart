@@ -18,8 +18,7 @@ void main() async {
   runApp(const Sortyfiy());
 }
 
-const String openAiApiKey =
-    "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"; // Ersetze mit deinem API Key
+const String openAiApiKey = "***";
 
 Future<Map<String, dynamic>?> fetchProductData(String barcode) async {
   final url =
